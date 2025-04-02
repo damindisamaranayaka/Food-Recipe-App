@@ -11,7 +11,7 @@ resource "aws_security_group" "allow_ssh_http" {
     from_port   = 22
     to_port     = 22
     protocol    = "tcp"
-    cidr_blocks = ["175.157.127.238/32"]  # Allow SSH access from any IP (be more restrictive in production)
+    cidr_blocks = ["0.0.0.0/0"]  # Allow SSH access from any IP (be more restrictive in production)
   }
 
   ingress {
